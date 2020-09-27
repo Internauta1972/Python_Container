@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  python_container:
+    container_name: python_container
+    build: .
+    image: manuel1972/curso_ia
+    tty: true
+    command: sh
+    volumes: 
+      - data:/curso
+volumes:
+  data:
